@@ -27,8 +27,8 @@ class TicTacToe
     user_input.to_i - 1
   end
 
-  def move(index, current_player = "X")
-    @board[index.to_i - 1] = current_player
+  def move(location, character = "X")
+    @board[location.to_i - 1] = character
   end
   # def move(board, index, current_player)
   #   @board[index] = current_player
